@@ -1,0 +1,100 @@
+|<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+    <title>Solicitá tu Cotización - Jerónimo Zalazar</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <img src="../images/Preview.png" alt="Logo de Jerónimo Zalazar, consultor de seguros" id="logo-img">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="conoceme.html">Conocé a Jerónimo</a></li>
+                    <li><a href="servicios.html">Nuestros Seguros</a></li>
+                    <li><a href="companias.html">Compañías Aliadas</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="formulario-cotizacion">
+            <div class="container">
+                <h2>Pedí tu cotización ¡ahora!</h2>
+                
+                <form action="#" method="POST" class="form-cotizar">
+                    <div class="form-group">
+                        <label for="nombreApellido">Nombre y Apellido</label>
+                        <input type="text" id="nombreApellido" name="nombreApellido" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="Ej: 261 1234567 (Opcional)">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tipoSeguro">Tipo de Seguro</label>
+                        <select id="tipoSeguro" name="tipoSeguro" required>
+                            <option value="" disabled selected>Selecciona una opción...</option>
+                            <option value="automotor">Seguro Automotor</option>
+                            <option value="hogar">Seguro de Hogar</option>
+                            <option value="vida">Seguro de Vida</option>
+                            <option value="accidentes_personales">Accidentes Personales</option>
+                            <option value="otro">Otro (detallar en mensaje)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="descripcionCobertura">Descripción o Detalle de Cobertura</label>
+                        <textarea id="descripcionCobertura" name="descripcionCobertura" rows="5" placeholder="Contanos qué necesitás asegurar o qué tipo de cobertura buscás..."></textarea>
+                    </div>
+
+                    <div class="form-group form-group-checkbox">
+                        <input type="checkbox" id="terminosCondiciones" name="terminosCondiciones" required>
+                        <label for="terminosCondiciones" class="label-checkbox">Acepto los <a href="#" target="_blank">Términos y Condiciones</a>.</label>
+                    </div>
+
+                    <div class="form-group form-group-submit">
+                        <button type="submit" class="btn">Enviar Solicitud</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <a href="contacto.html" class="footer-link">
+                <img src="../images/contacto.jpg" alt="Icono de un sobre para ir a la página de contacto." class="footer-logo">
+            </a>
+            <a href="https://www.instagram.com" target="_blank" class="footer-link">
+                <img src="../images/instagram.jpg" alt="Logo de Instagram que lleva al perfil de Jerónimo Zalazar." class="footer-logo">
+            </a>
+            <a href="https://www.facebook.com" target="_blank" class="footer-link">
+                <img src="../images/facebook.jpg" alt="Logo de Facebook que lleva al perfil de Jerónimo Zalazar." class="footer-logo">
+            </a>
+        </div>
+    </footer>
+
+</body>
+</html>

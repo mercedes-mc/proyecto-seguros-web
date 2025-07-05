@@ -1,0 +1,655 @@
+
+:root {
+    --font-titulos: 'Montserrat', sans-serif;
+    --font-cuerpo: 'Lato', sans-serif;
+    --color-logo-bg: #031c32;
+    --color-logo-text: #dabcc6;
+    --color-logo-accent: #b3375b;
+    --color-texto-principal: #333333;
+    --color-fondo-claro: #f4f4f4;
+    --color-enlace: #007bff;
+}
+
+/* --- Estilos Generales --- */
+body {
+    font-family: var(--font-cuerpo);
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: var(--color-texto-principal);
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-titulos);
+    color: var(--color-logo-bg);
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+h2 { 
+    font-size: 2.2em; 
+    text-align: center; 
+    padding-top: 40px; 
+    margin-bottom: 30px;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block; 
+}
+
+/* --- Header --- */
+header {
+    background-color: #fff;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+    overflow: hidden; 
+}
+
+header .logo-container {
+    float: left;
+}
+
+#logo-img {
+    height: 60px;
+}
+
+header nav {
+    float: right;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    line-height: 60px; 
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--color-logo-bg);
+    font-weight: 700;
+    font-size: 1em;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+    color: var(--color-logo-accent);
+}
+
+/* --- Botón General --- */
+.btn {
+    display: inline-block;
+    background-color: var(--color-logo-accent);
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-family: var(--font-titulos);
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #932d4a; 
+    color: #fff;
+}
+
+
+/* Hero Section */
+#hero {
+    text-align: center;
+    padding-bottom: 40px;
+}
+.hero-image-container {
+    position: relative;
+    text-align: center;
+}
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    color: var(--color-logo-text);
+    background-color: rgba(3, 28, 50, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.hero-text h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 2.8em;
+    color: var(--color-logo-text);
+    text-align: left;
+}
+.hero-cta {
+    margin-top: 25px;
+}
+
+/* Por qué elegirnos */
+#porque-elegirnos {
+    padding: 30px 0;
+    background-color: var(--color-fondo-claro);
+}
+
+#porque-elegirnos .elegirnos-items {
+    text-align: center;
+}
+
+.elegirnos-item {
+    display: inline-block;
+    width: 30%;
+    margin: 10px 1.5%;
+    vertical-align: top;
+    text-align: center;
+}
+.elegirnos-img-circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 20px;
+    border: 4px solid #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+.elegirnos-item h4 {
+    font-size: 1.3em;
+}
+
+/* Principales Seguros */
+#principales-seguros {
+    padding: 30px 0;
+}
+#principales-seguros .seguros-slider {
+    background-color: var(--color-fondo-claro);
+    padding: 20px 10px;
+    overflow-x: auto;
+    white-space: nowrap;
+    text-align: center;
+    border-radius: 8px;
+}
+.seguro-item {
+    display: inline-block;
+    width: 150px;
+    margin: 0 15px;
+    text-align: center;
+    vertical-align: top;
+}
+.seguro-item img {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 10px auto; 
+}
+.seguro-item p {
+    margin: 0;
+    font-family: var(--font-titulos);
+    font-weight: 700;
+}
+
+/* Cierre CTA */
+#cierre-cta {
+    text-align: center;
+    padding-top: 40px;
+}
+.cierre-image-container {
+    position: relative;
+    text-align: center;
+}
+.cierre-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--color-logo-text);
+    background-color: rgba(3, 28, 50, 0.6);
+    padding: 20px 30px;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 600px;
+}
+.cierre-text h3 {
+    margin: 0;
+    font-size: 2.2em;
+    color: var(--color-logo-text);
+}
+.cierre-cta-btn {
+    margin-top: 25px;
+    padding-bottom: 40px;
+}
+
+/* --- Footer --- */
+footer {
+    background-color: var(--color-logo-bg);
+    padding: 30px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.footer-logo {
+    display: inline-block; 
+    height: 40px;
+    width: auto;
+    margin: 0 20px;
+}
+
+/* --- Estilos para Pagina "Conocé a Jerónimo" --- */
+
+/* Sección Sobre Nosotros */
+#sobre-nosotros-contenido {
+    padding: 30px 0;
+}
+
+.contenido-dos-columnas {
+    overflow: hidden; 
+    margin-top: 20px;
+    display: block; 
+}
+
+.contenido-dos-columnas .columna-izquierda {
+    float: left;
+    width: 45%;
+    padding-right: 5%;
+    box-sizing: border-box;
+}
+
+.contenido-dos-columnas .columna-izquierda img {
+    border-radius: 8px;
+    border: 4px solid #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.contenido-dos-columnas .columna-derecha {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+/* Sección Compromisos */
+#compromisos-asumidos {
+    padding: 30px 0 50px 0;
+    background-color: var(--color-fondo-claro);
+}
+
+.compromisos-items-wrapper {
+    text-align: center; 
+}
+
+.compromisos-item {
+    display: inline-block;
+    width: 30%;
+    margin: 10px 1.5%;
+    vertical-align: top;
+    text-align: center;
+}
+
+.compromisos-img-circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 20px; 
+    border: 4px solid #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.compromisos-item h3 {
+    font-size: 1.4em;
+    color: var(--color-logo-bg);
+}
+
+#pagina-contacto {
+    padding: 30px 0 50px 0;
+}
+
+#pagina-contacto h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contacto-columnas-wrapper {
+    display: table;
+    width: 100%; 
+    border-spacing: 20px 0; 
+}
+
+.columna-info-contacto,
+.columna-formulario-contacto {
+    display: table-cell;
+    width: 50%; 
+    vertical-align: top;  
+    box-sizing: border-box;
+}
+
+.columna-info-contacto {
+    padding-right: 20px; 
+}
+
+.columna-info-contacto h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+.columna-info-contacto > p {
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+.info-item {
+    margin-bottom: 25px;
+    overflow: hidden; 
+}
+.info-item-icono {
+    float: left;
+    width: 32px;
+    margin-right: 15px;
+}
+.info-item-texto {
+    overflow: hidden;
+}
+.info-item-texto h4 {
+    margin-bottom: 5px;
+    font-size: 1.2em;
+}
+.info-item-texto .detalle-contacto {
+    margin: 0;
+    color: #555;
+}
+
+.columna-formulario-contacto {
+    background-color: var(--color-fondo-claro);
+    padding: 40px 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.form-sintetico {
+    background-color: var(--color-fondo-claro);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+
+.form-sintetico .form-group-submit {
+    text-align: center;
+    margin-top: 10px; 
+}
+
+.form-sintetico {
+    padding: 40px; 
+}
+
+.form-sintetico .form-group {
+    margin-bottom: 25px; 
+}
+
+.form-sintetico .form-group label {
+    margin-bottom: 10px; 
+}
+
+.form-sintetico .form-group-submit {
+    margin-top: 20px;
+}
+
+/* --- Estilos para Pagina "Compañías Aliadas" --- */
+
+#lista-companias {
+    padding: 30px 0;
+}
+
+#lista-companias h2 {
+    
+    margin-bottom: 20px;
+}
+
+.descripcion-companias {
+    text-align: center;
+    max-width: 750px; 
+    margin: 0 auto 40px auto; 
+    line-height: 1.7;
+}
+
+.logos-grid {
+    text-align: center; 
+}
+
+.logo-item {
+    display: inline-block; 
+    width: 22%;            
+    margin: 10px 1.5%;     
+    vertical-align: middle; 
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.logo-item img {
+    width: 140px;  
+    height: 140px; 
+    border-radius: 50%; 
+    object-fit: contain; 
+    background-color: #fff;
+    border: 4px solid var(--color-fondo-claro);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease; 
+}
+
+.logo-item img:hover {
+    transform: scale(1.05);
+}
+
+/* Sección CTA Compañías */
+#cta-companias {
+    padding: 40px 0;
+    margin-top: 30px;
+    background-color: var(--color-fondo-claro);
+    text-align: center;
+}
+
+#cta-companias h3 {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 1.6em;
+}
+
+.botones-cta-companias .btn {
+    margin: 5px 10px; 
+}
+
+/* --- Estilos para Formularios (Cotización y Contacto) --- */
+
+#formulario-cotizacion {
+    padding: 30px 0 50px 0;
+}
+
+#formulario-cotizacion h2 {
+       margin-bottom: 30px;
+}
+
+.form-cotizar {
+    max-width: 700px; 
+    margin: 0 auto;   
+    background-color: var(--color-fondo-claro);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 700; 
+    margin-bottom: 8px;
+    color: var(--color-logo-bg);
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: var(--font-cuerpo); 
+    font-size: 1em;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group input[type="tel"]:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--color-logo-accent);
+    outline: none;
+    box-shadow: 0 0 5px rgba(179, 55, 91, 0.3);
+}
+
+.form-group select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.4-12.8z%22%2F%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 10px;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+
+.form-group-checkbox {
+    display: block;
+}
+
+.form-group-checkbox input[type="checkbox"] {
+    width: auto; 
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.form-group-checkbox .label-checkbox {
+    display: inline; 
+    font-weight: 400; 
+    color: var(--color-texto-principal);
+}
+
+.form-group-submit {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* --- Estilos para Pagina "Servicios" --- */
+
+#lista-servicios {
+    padding: 30px 0;
+    text-align: center;
+}
+
+#lista-servicios h2 {
+    margin-bottom: 40px;
+}
+
+.servicios-detalle-lista {
+    list-style-type: none; 
+    padding-left: 0;
+    max-width: 750px;      
+    margin: 0 auto;        
+    text-align: left;      
+}
+
+.servicios-detalle-lista li {
+    padding: 20px 20px 20px 40px;
+    position: relative;
+    margin-bottom: 25px;
+    background-color: var(--color-fondo-claro);
+    border-radius: 8px;
+    border-left: 5px solid var(--color-logo-accent);
+}
+
+/* Creación de la viñeta circular personalizada */
+.servicios-detalle-lista li::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 15px;
+    top: 28px; 
+    width: 12px;
+    height: 12px;
+    background-color: var(--color-logo-accent);
+    border-radius: 50%;
+}
+
+.servicios-detalle-lista li h4 {
+    margin: 0 0 8px 0;
+    font-size: 1.3em;
+}
+
+.servicios-detalle-lista li p {
+    margin: 0;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+/* Sección CTA "Dudas" */
+#dudas-cta {
+    padding: 40px 0;
+    background-color: var(--color-logo-bg);
+    color: #fff;
+    margin-top: 30px;
+}
+
+.dudas-cta-wrapper {
+    overflow: hidden; 
+}
+
+.dudas-texto {
+    float: left;
+    width: 60%;
+    box-sizing: border-box;
+}
+
+.dudas-texto h2 {
+    color: #fff;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    line-height: 50px; 
+}
+
+.dudas-boton {
+    float: right;
+    width: 35%;
+    text-align: right; 
+    box-sizing: border-box;
+    padding-top: 5px; 
+}
